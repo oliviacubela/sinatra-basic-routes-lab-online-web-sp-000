@@ -2,14 +2,14 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 
-  get "/name" do 
+  get "/name" do
     "My name is"
   end
 end
   # def call(env)
   #   resp = Rack::Response.new
   #   req = Rack::Request.new(env)
-  # 
+  #
   #   if req.path=="/name"
   #     resp.write "My name is  #{name}"
   #   end
