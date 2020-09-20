@@ -2,13 +2,17 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 
-  def call(env)
-    resp = Rack::Response.new
-    req = Rack::Request.new(env)
-
-    if req.path=="/name"
-      resp.write "My name is  #{name}"
-    end
+  get "/name" do 
+    "My name is"
+  end
+end
+  # def call(env)
+  #   resp = Rack::Response.new
+  #   req = Rack::Request.new(env)
+  # 
+  #   if req.path=="/name"
+  #     resp.write "My name is  #{name}"
+  #   end
 
     # if req.path=="/name"
     #   resp.write "My name is #{name}"
@@ -19,6 +23,6 @@ class App < Sinatra::Base
     #   resp.write "My favorite song is #{favorite-song}"
     # end
 
-    resp.finish
-  end
-end
+#     resp.finish
+#   end
+# end
