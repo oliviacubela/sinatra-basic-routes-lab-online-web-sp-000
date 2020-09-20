@@ -14,4 +14,3 @@ class App < Sinatra::Base
     "My favorite song is Toxic"
   end
 end
-
